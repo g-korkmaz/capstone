@@ -9,7 +9,7 @@ output:
 
 ```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(fig.width=5, fig.height=4) 
-
+options(tinytex.verbose = TRUE)
 if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
 if(!require(caret)) install.packages("caret", repos = "http://cran.us.r-project.org")
 if(!require(data.table)) install.packages("data.table", repos = "http://cran.us.r-project.org")
@@ -21,6 +21,7 @@ if(!require(lemon)) install.packages("lemon", repos = "http://cran.us.r-project.
 if(!require(kableExtra)) install.packages("kableExtra", repos = "http://cran.us.r-project.org")
 if(!require(rattle)) install.packages("rattle", repos = "http://cran.us.r-project.org")
 
+library(tinytex)
 library(rattle)
 library(kableExtra)
 library(scales)
@@ -272,8 +273,8 @@ cat("Rf Accuracy (with all predictors) : ", acc_all_rf)
 
 ## Generalized Linear Model
 
-We know that linear regression is not the most powerful algorithm for classification models so I decided to use the generalized linear model that is based on a function that will give a discrete output and that looks like this : 
-![GLM function](./images/GLM_plot.jpg)
+We know that linear regression is not the most powerful algorithm for classification models so I decided to use the generalized linear model that is based on a function that will give a discrete output.
+
 By using a code similar to what was done before, I obtained the following results : 
 
 ```{r acc_glm,fig.align='center', echo=FALSE}
