@@ -2,6 +2,8 @@
 
 This is the repository for the capstone project of HarvardX Data Science course. 
 
+As a student who knew nothing about data science before this course, it gave me a new vision on all the opportunities that data give us and I'm now persuing studies to becom a data analyst.
+
 ## Installation
 
 To open the files you can download the repository as a zip file or clone it : 
